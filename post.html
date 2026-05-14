@@ -33,11 +33,18 @@
       .post-body {
         max-width: 800px;
         margin: 60px auto;
+        padding: 0 20px;
         font-size: 1.25rem;
         color: rgba(255, 255, 255, 0.8);
       }
       .post-body p {
         margin-bottom: 32px;
+      }
+      @media (max-width: 768px) {
+        .post-body {
+          margin: 30px auto;
+          font-size: 1.1rem;
+        }
       }
       .post-body h2 {
         color: #fff;
@@ -68,6 +75,7 @@
           <a href="/#labs">Labs</a>
         </div>
         <a href="https://labs.google/disco" class="cta-btn">Join Waitlist</a>
+        <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
       </div>
     </nav>
 

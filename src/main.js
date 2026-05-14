@@ -14,6 +14,30 @@ window.addEventListener('scroll', () => {
   }
 })
 
+// Mobile menu toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn')
+const navLinks = document.querySelector('.nav-links')
+
+if (mobileMenuBtn && navLinks) {
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+    if (navLinks.classList.contains('active')) {
+      mobileMenuBtn.textContent = '✕'
+    } else {
+      mobileMenuBtn.textContent = '☰'
+    }
+  })
+
+  // Close menu when a link is clicked
+  const links = navLinks.querySelectorAll('a')
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active')
+      mobileMenuBtn.textContent = '☰'
+    })
+  })
+}
+
 // Reveal animations
 const reveals = document.querySelectorAll('.reveal')
 reveals.forEach((el, i) => {
