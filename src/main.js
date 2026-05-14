@@ -14,27 +14,6 @@ window.addEventListener('scroll', () => {
   }
 })
 
-// Mobile Menu Toggle
-const navToggle = document.getElementById('navToggle')
-const navLinks = document.getElementById('navLinks')
-
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active')
-    navLinks.classList.toggle('mobile-active')
-    document.body.classList.toggle('menu-open')
-  })
-
-  // Close menu when clicking links
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.classList.remove('active')
-      navLinks.classList.remove('mobile-active')
-      document.body.classList.remove('menu-open')
-    })
-  })
-}
-
 // Reveal animations
 const reveals = document.querySelectorAll('.reveal')
 reveals.forEach((el, i) => {
