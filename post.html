@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Era of AI-Native Browsing | Google Disco Blog</title>
+    <style>
+      .post-header {
+        height: 60vh;
+        width: 100%;
+        background-image: url('/blog1.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 60px;
+      }
+      .post-header::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, var(--bg), transparent);
+      }
+      .post-meta {
+        position: relative;
+        z-index: 10;
+      }
+      .post-body {
+        max-width: 800px;
+        margin: 60px auto;
+        font-size: 1.25rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .post-body p {
+        margin-bottom: 32px;
+      }
+      .post-body h2 {
+        color: #fff;
+        margin: 60px 0 24px;
+        font-size: 2rem;
+      }
+      .post-body blockquote {
+        border-left: 4px solid var(--primary);
+        padding-left: 24px;
+        font-style: italic;
+        color: var(--text);
+        margin: 48px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo logo-old">
+          <span>D</span><span>i</span><span>s</span><span>c</span><span>o</span>
+        </a>
+        <div class="nav-links">
+          <a href="/#features">Features</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/#labs">Labs</a>
+        </div>
+        <a href="https://labs.google/disco" class="cta-btn">Join Waitlist</a>
+      </div>
+    </nav>
+
+    <header class="post-header">
+      <div class="container post-meta">
+        <span class="blog-tag reveal">Innovation</span>
+        <h1 class="reveal" style="font-size: clamp(2.5rem, 6vw, 4rem); max-width: 900px;">The Era of AI-Native Browsing</h1>
+        <div class="blog-footer reveal" style="width: fit-content; gap: 20px;">
+          <span>May 14, 2026</span>
+          <span>By Disco Team</span>
+        </div>
+      </div>
+    </header>
+
+    <article class="container">
+      <div class="post-body reveal">
+        <p>Since the dawn of the World Wide Web, the browser has been a window. A passive viewer that renders pixels based on HTML, CSS, and JavaScript. We’ve spent decades perfecting the art of "viewing" content. But with Google Disco, we’re asking a different question: <strong>What if the browser was a worker?</strong></p>
+        
+        <h2>Beyond the Tab</h2>
+        <p>Current browsers organize information into tabs. Each tab is an isolated island. If you want to plan a trip, you open ten tabs—flights, hotels, things to do, maps, reviews. You then spend hours manually synthesizing that information into a coherent plan. You are the glue between the data.</p>
+        
+        <blockquote>"Disco isn't just a browser; it's a synthesis engine that understands your intent across the entire web."</blockquote>
+        
+        <p>Disco introduces <strong>GenTabs</strong> (Generative Tabs). When you start a task—say, "Plan a 3-day trip to Tokyo with a focus on street food"—Disco doesn't just open pages. It reads them. It understands them. And then, it builds a custom tool for you right in your browser.</p>
+
+        <h2>The Synthesis Engine</h2>
+        <p>Powered by <strong>Gemini 3</strong>, Disco can reason across multiple data sources in real-time. It can identify pricing trends, cross-reference reviews with location data, and even predict availability. It transforms the "search and click" cycle into a "request and receive" experience.</p>
+        
+        <p>This is the start of AI-native browsing. An era where your tools are as dynamic as the web itself.</p>
+      </div>
+    </article>
+
+    <footer class="container" style="padding: 60px 0; border-top: 1px solid var(--glass-border); margin-top: 100px; text-align: center; color: var(--text-muted);">
+      <p>&copy; 2026 Google Labs. Experimental Project.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
